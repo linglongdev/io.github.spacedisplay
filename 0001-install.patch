@@ -1,0 +1,39 @@
+From d12f8fc28e714b5a7225aa4b6dd43a7aaf04c020 Mon Sep 17 00:00:00 2001
+From: wjyrich <1071633242@qq.com>
+Date: Fri, 16 Aug 2024 15:57:36 +0800
+Subject: [PATCH] install
+
+---
+ lib/include/filepath.h           | 2 +-
+ lib/private/LinuxFileManager.cpp | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/lib/include/filepath.h b/lib/include/filepath.h
+index 4d26c4b..f208cef 100644
+--- a/lib/include/filepath.h
++++ b/lib/include/filepath.h
+@@ -3,7 +3,7 @@
+ 
+ #include <string>
+ #include <vector>
+-
++#include <cstdint>
+ class FilePath {
+ public:
+     enum class CompareResult {
+diff --git a/lib/private/LinuxFileManager.cpp b/lib/private/LinuxFileManager.cpp
+index f01af46..bfa0658 100644
+--- a/lib/private/LinuxFileManager.cpp
++++ b/lib/private/LinuxFileManager.cpp
+@@ -8,7 +8,7 @@
+ #include <fstream>
+ #include <thread>
+ #include <regex>
+-
++#include <array>
+ #include <unistd.h>
+ #include <pwd.h>
+ 
+-- 
+2.43.4
+
